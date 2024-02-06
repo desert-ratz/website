@@ -1,0 +1,44 @@
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+<div class="authorbox">
+ <hr class="author-container">
+  <div id="author-content">
+    <h4 class="section-title">Chi è il CMDR-Autore</h4>
+    <div class="author-bio">
+     <img itemprop="image" id="image-author" src="{{ author.picture }}" alt="{{ author.name }}">
+     <div class="author-details">
+        <p itemprop="author" id="name-author"><b>{{ author.display_name }}</b></p>
+        <div id="about-author">{{ author.about }}</div>
+     </div>
+      <div id="social-author">
+        {% if author.facebook %}
+            <a href="{{ author.facebook }}" target="_blank" title="Vai al profilo Facebook di {{ author.display_name }}"><span class="iconify" data-icon="brandico:facebook-rect" data-inline="false" style="color:#2e6db4;"></span></a>
+        {% endif %}
+
+        {% if author.twitter %}
+            <a href="{{ author.twitter }}" target="_blank" title="Leggi i tweet di {{ author.display_name }}"><span class="iconify" data-icon="brandico:twitter-bird" data-inline="false" style="color:#2e6db4;"></span></a>
+        {% endif %}
+
+        {% if author.telegram %}
+        <a href="{{ author.telegram }}" target="_blank" title="Contatta {{ author.display_name }} su Telegram"><span class="iconify" data-icon="icon-park-outline:telegram" data-inline="false" style="color:#2e6db4;"></span></a>
+        {% endif %}
+
+        {% if author.web %}
+            <a href="{{ author.web }}" target="_blank" title="Il sito web di {{ author.display_name }}"><span class="iconify" data-icon="ls:web" data-inline="false" style="color:#2e6db4;"></span></a>
+        {% endif %}
+
+        {% if author.psnid %}
+            <a href="{{ author.psnid }}" target="_blank" title="Profilo PSN di {{ author.display_name }}"><span class="iconify" data-icon="fa-brands:playstation" data-inline="false" style="color:#2e6db4;"></span></a>
+        {% endif %}
+
+        {% if author.steam %}
+            <a href="{{ author.steam }}" target="_blank" title="Profilo Steam di {{ author.display_name }}"><span class="iconify" data-icon="simple-icons:steam" data-inline="false" style="color:#2e6db4;"></span></a>
+        {% endif %}
+
+        {% if author.inara %}
+            <a href="{{ author.inara }}" target="_blank" title="Profilo Inara di {{ author.display_name }}"><span class="acfs-squadrons" data-inline="false" style="color:#ff7100;"></span></a>
+        {% endif %}
+     </div>
+    </div>
+    </div>
+</div>

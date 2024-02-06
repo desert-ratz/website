@@ -1,0 +1,137 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title:              Desert Ratz
+h1title:            Desert Ratz
+bio:                Blaze a Trail, Leave No Sand Unturned
+keywords:           desert, ratz, hll, hell let loose
+locale:             en
+baseurl: ""
+url: https://desert-ratz.com
+
+#
+###################################
+# PWA Settings
+####################################
+#
+name: "Alto Comando Flotta Stellare"
+short_name: "ACFS"
+lang_direction: "ltr"
+color: "#f07b05"
+background_color: "#1a1919"
+
+#
+###################################
+# Jekyll-SEO-tag settings
+####################################
+#
+lang: en
+
+socials:
+  - discord: https://discord.gg/desertratz
+  #facebook:           Altocomandoflottastellare
+  #instagram:          flottastellare
+  #youtube:            altocomandoflottastellare
+  #twitter:            twitter_username
+
+  #telegram:           flottastellare
+
+logo: /images/logo_843x885.png
+
+settings:
+  rating: general  # May be general, mature, restricted, 14 years or safe for kids
+
+author: ratz
+
+# Comments
+disqus_shortname:   flottastellare
+
+#google-site-verification:
+analytics-id:       UA-147419241-1
+
+
+
+# personal
+location:           Wong Sher
+phone:              310-318-5555
+email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+
+# Other
+background_image:   /images/bg.jpg
+# Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
+slapform_thankyou_page: /thank-you
+
+# Scopes
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      permalink: "/blog/:title/"
+      layout: post
+      author:
+      image: /images/logo_843x885.png
+
+  -
+    scope:
+      path: ""
+      type: events
+    values:
+      permalink: "/events/:category/"
+      layout: event
+      image: /images/logo_843x885.png
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+  guide:
+    output: true
+    permalink: /guide/:title/
+
+  author:
+    output: true
+    permalink: /autore/:name/
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+permalink:          /blog/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Gems
+plugins:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jemoji
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, external_sites, src, vendor, CNAME, LICENSE, Rakefile, old]

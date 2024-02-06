@@ -1,0 +1,100 @@
+---
+layout: null
+title: Blog
+description: Segui il nostro blog per restare informato sulle attività dello Squadrone, per aggiornarti con le guide pubblicate e per conoscere gli eventi nella Galassia.
+image: /images/logo_843x885.png
+last_modified_at: 2019-07-30
+---
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+    {% include head.html %}
+		{% seo %}
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | prepend:site.baseurl }}" class="logo">{{site.h1title}}</a>
+				</header>
+
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+						
+					</nav>
+
+				<!-- Main -->
+				<div id="main">		
+          <article class="post featured">
+            <header class="major">
+              <h2><a href="#">Notizie dalla Galassia</a></h2>
+              <p>Segui il nostro blog per restare informato su tutte le attività dello Squadrone, 
+								per aggiornarti con le guide che pubblichiamo e per conoscere i principali eventi della Galassia.
+							</p>
+            </header>
+
+          </article>
+					<!-- Post -->
+					<section class="posts">
+						{% for post in paginator.posts %}
+							<article>
+								<header>
+									<span class="date">{{ post.date | date_to_string }}</span>
+									<h2><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a></h2>
+								</header>
+								<a href="{{ post.url | prepend:site.baseurl }}" class="image fit"><img src="/images/blank.png" alt="" data-echo="{{ post.image | prepend:site.baseurl }}" /></a>
+								<p>{{ post.excerpt }}</p>
+								<ul class="actions">
+									<li><a href="{{ post.url | prepend:site.baseurl }}" class="button">Continua a leggere</a></li>
+								</ul>
+							</article>
+						{% endfor %}
+
+					</section>
+
+				<!-- Footer -->
+				<footer>
+					<!-- pagination -->
+						{% if paginator.total_pages > 1 %}
+						<div class="pagination"> 
+							{% if paginator.previous_page %}
+								<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">Prev</a>
+							{% endif %}
+
+							{% for page in (1..paginator.total_pages) %}
+								{% if page == paginator.page %}
+									<span class="page active">{{ page }}</span>
+								{% elsif page == 1 %}
+									<a href="/blog/">{{ page }}</a>
+								{% else %}
+									<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page">{{ page }}</a>
+								{% endif %}
+							{% endfor %}
+
+							{% if paginator.next_page %}
+								<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
+							{% endif %}
+						</div>
+						{% endif %}
+				</footer>
+			</div>
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %} 
+		
+   <!-- Lazy Load -->
+   {% include lazyload.html %}
+
+	</body>
+</html>

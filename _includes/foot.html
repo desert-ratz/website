@@ -1,0 +1,34 @@
+<footer id="footer">
+    <section>
+      <h3>Social</h3>
+      <ul class="icons alt">
+        {% if site.socials.facebook %}
+        <li><a href="https://facebook.com/{{site.socials.facebook}}" class="icon fa-facebook" aria-hidden="true" rel="nofollow"><span class="label">Facebook</span></a></li>
+        {% endif %}
+        {% if site.socials.twitter %}
+        <li><a href="https://twitter.com/{{site.socials.twitter}}" class="icon fa-twitter" aria-hidden="true" rel="nofollow"><span class="label">Twitter</span></a></li>
+        {% endif %}
+        {% if site.socials.youtube %}
+        <li><a href="https://www.youtube.com/@{{site.socials.youtube}}" class="icon fa-youtube" aria-hidden="true" rel="nofollow"><span class="label">YouTube</span></a></li>
+        {% endif %}
+        {% if site.instagram %}
+        <li><a href="https://instagram.com/{{site.socials.instagram}}" class="icon fa-instagram" aria-hidden="true" rel="nofollow"><span class="label">Instagram</span></a></li>
+        {% endif %}
+        {% if site.socials.discord %}
+        <li><a href="{{site.socials.discord}}" class="fa fa-discord-alt" aria-hidden="true" rel="nofollow"><span class="label">Discord</span></a></li>
+        {% endif %}
+        {% if site.socials.telegram %}
+        <li><a href="https://t.me/{{site.socials.telegram}}" class="fa fa-telegram fa-lg" aria-hidden="true" rel="nofollow"><span class="label">Telegram</span></a></li>
+        {% endif %}
+      </ul>
+    </section>
+</footer>
+<!-- Copyright -->
+<div id="copyright">
+  <ul>
+    <li style="text-transform: lowercase;">Site content copyright &copy; 2019 - {{ 'now' | date: "%Y" }} Desert Ratz</li>
+  </ul>
+  <ul>
+    <li id="disclaimer"><a href="/about/disclaimer/" title="Disclaimer and License">Disclaimer and License</a></li>
+  </ul>
+</div>

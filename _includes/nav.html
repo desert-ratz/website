@@ -1,0 +1,55 @@
+<!-- This finds the current page so it can be highlighted. -->
+{% for entry in site.data.navigation %}
+{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
+    {% if fullurl == page.url %}
+        {% assign current_page = fullurl %}
+        {% break %}
+    {% elsif page.url contains fullurl %}
+        {% assign current_page = fullurl %}
+    {% endif %}
+{% endfor %}
+
+<!-- Then we build the nav bar. -->
+
+<ul class="links">
+    {% for entry in site.data.navigation %}
+        {% if entry.url == current_page %}
+            {% assign current = ' class="active"' %}
+        {% else %}
+            {% assign current = null %}
+        {% endif %}
+        {% assign sublinks = entry.sublinks %}
+        {% if sublinks %}
+
+        <li{{ current }}>
+            <a href="{{ site.baseurl }}{{ entry.url }}" class="trigger-drop">{{ entry.title }} ▼</a>
+            <ul class="drop" style="list-style: none;">
+                {% for sublink in sublinks %}
+                <li class="active"><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% else %}
+            <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+<ul class="icons">
+  <li><a href="/search/" class="icon fa-search" title="Search..."><span class="label">Search</span></a></li>
+  {% if site.socials.facebook %}
+  <li><a href="https://facebook.com/{{site.socials.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+  {% endif %}
+  {% if site.socials.youtube %}
+  <li><a href="https://www.youtube.com/@{{site.socials.youtube}}" class="icon fa-youtube" aria-hidden="true" rel="nofollow"><span class="label">YouTube</span></a></li>
+  {% endif %}
+  {% if site.socials.instagram %}
+  <li><a href="https://instagram.com/{{site.socials.instagram}}" class="icon fa-instagram" aria-hidden="true" rel="nofollow"><span class="label">Instagram</span></a></li>
+  {% endif %}
+  {% if site.socials.discord %}
+  <li><a href="{{ site.socials.discord }}" class="fa fa-discord-alt" aria-hidden="true" rel="nofollow"><span class="label">Discord</span></a></li>
+  {% endif %}
+  {% if site.socials.telegram %}
+  <li><a href="https://t.me/{{site.socials.telegram}}" class="fa fa-telegram fa-lg" aria-hidden="true" rel="nofollow"><span class="label">Telegram</span></a></li>
+  {% endif %}
+</ul>

@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+
+<div class="col sqs-col-12 span-12">
+    {% for event in events %}
+    {% assign current_time = site.time | date: '%s' %}
+    {% assign event_time = event.date | date: '%s' %}
+    <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+        <div class="sqs-block-content">
+            <hr>
+        </div>
+    </div>
+
+
+    <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+        data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}"
+        id="block-2feffa561b97aefebe02">
+        <div class="sqs-block-content">
+
+            <div class="sqs-html-content">
+                <p style="text-align:center;white-space:pre-wrap;" class="sqsrte-small"><strong>{{ event.category }}</strong><br>{{ event.date | date: "%a %eND %B" | upcase }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="sqs-block gallery-block sqs-block-gallery"
+        data-block-json="{&quot;methodOption&quot;:&quot;transient&quot;,&quot;aspect-ratio&quot;:&quot;square&quot;,&quot;auto-crop&quot;:true,&quot;blockAnimation&quot;:&quot;none&quot;,&quot;collectionId&quot;:&quot;65bf70a2406aab28f5cfa0e8&quot;,&quot;design&quot;:&quot;grid&quot;,&quot;lightbox&quot;:false,&quot;padding&quot;:0,&quot;show-meta&quot;:true,&quot;show-meta-basic&quot;:true,&quot;show-meta-only-title&quot;:true,&quot;show-meta-only-description&quot;:false,&quot;square-thumbs&quot;:false,&quot;thumbnails-per-row&quot;:3,&quot;transientGalleryId&quot;:&quot;65bf70a2406aab28f5cfa0e8&quot;}"
+        data-block-type="8" id="block-49000da106473166a42c">
+        <div class="sqs-block-content">
+            <div class="sqs-gallery-container sqs-gallery-block-grid sqs-gallery-aspect-ratio-square sqs-gallery-thumbnails-per-row-3 sqs-gallery-block-show-meta sqs-gallery-block-meta-only-title block-animation-none clear" id="yui_3_17_2_1_1707238008668_161">
+                <div class="sqs-gallery sqs-gallery-design-grid" id="yui_3_17_2_1_1707238008668_178">
+                    <div class="slide sqs-gallery-design-grid-slide" data-type="image" data-animation-role="image"
+                        id="yui_3_17_2_1_1707238008668_213">
+                        <div class="margin-wrapper">
+                            <a role="presentation" class="image-slide-anchor content-fit">
+                                <noscript><img
+                                        src="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/1707045125470-Q3MD5U1U5KDXSI1L56IA/Leverstock-Green-logo.png"
+                                        alt="Leverstock Green" /></noscript><img class="thumb-image loaded"
+                                    elementtiming="system-gallery-block-grid"
+                                    data-src="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/1707045125470-Q3MD5U1U5KDXSI1L56IA/Leverstock-Green-logo.png"
+                                    data-image="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/1707045125470-Q3MD5U1U5KDXSI1L56IA/Leverstock-Green-logo.png"
+                                    data-image-dimensions="317x315" data-image-focal-point="0.5,0.5" data-load="false"
+                                    data-image-id="65bf7105f7e9327583fe47b6" data-type="image"
+                                    style="opacity: 1; left: 27.7937px; top: 0px; width: 65.4127px; height: 65px; position: relative;"
+                                    data-parent-ratio="1.9" alt="Leverstock Green" data-image-resolution="100w"
+                                    src="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/1707045125470-Q3MD5U1U5KDXSI1L56IA/Leverstock-Green-logo.png?format=100w">
+                            </a>
+
+                            <div class="image-slide-title">{{ event.team-a }}</div>
+
+                        </div>
+                    </div>
+
+                    <div class="slide sqs-gallery-design-grid-slide" data-type="image" data-animation-role="image"
+                        id="yui_3_17_2_1_1707238008668_214">
+                        <div class="margin-wrapper">
+                            <a role="presentation" class="image-slide-anchor content-fit">
+                                <noscript><img
+                                        src="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/1656954069871-EGAHV64LRR57ARMLW9YB/Placeholder+grey.jpg"
+                                        alt="2 - 1" /></noscript><img class="thumb-image"
+                                    elementtiming="system-gallery-block-grid"
+                                    data-src="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/1656954069871-EGAHV64LRR57ARMLW9YB/Placeholder+grey.jpg"
+                                    data-image="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/1656954069871-EGAHV64LRR57ARMLW9YB/Placeholder+grey.jpg"
+                                    data-image-dimensions="500x750" data-image-focal-point="0.5,0.5" data-load="false"
+                                    data-image-id="65bf70a2406aab28f5cfa0eb" data-type="image" data-parent-ratio="0.7"
+                                    style="opacity: 0; left: 250px; top: 375px; width: 36px; height: 55px; position: relative;"
+                                    alt="2 - 1">
+                            </a>
+
+                            <div class="image-slide-title">{% if current_time > post_time %}
+                                {{ event.team-a-score }} - {{ event.team-b-score }}
+                                {% else %}
+                                {{ event.date | date: "%H:%M %p" }}
+                                {% endif %}</div>
+
+                        </div>
+                    </div>
+
+                    <div class="slide sqs-gallery-design-grid-slide" data-type="image" data-animation-role="image"
+                        id="yui_3_17_2_1_1707238008668_215">
+                        <div class="margin-wrapper">
+                            <a role="presentation" class="image-slide-anchor content-fit">
+                                <noscript><img
+                                        src="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/b60879b9-e503-4231-b6a6-61d6b4951bd8/RBFC+-+Dark.png"
+                                        alt="Real Bedford" /></noscript><img class="thumb-image loaded"
+                                    elementtiming="system-gallery-block-grid"
+                                    data-src="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/b60879b9-e503-4231-b6a6-61d6b4951bd8/RBFC+-+Dark.png"
+                                    data-image="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/b60879b9-e503-4231-b6a6-61d6b4951bd8/RBFC+-+Dark.png"
+                                    data-image-dimensions="284x284" data-image-focal-point="1.0,0.4965986394557823"
+                                    data-load="false" data-image-id="65bf70a2406aab28f5cfa0e9" data-type="image"
+                                    style="opacity: 1; left: 28px; top: 0px; width: 65px; height: 65px; position: relative;"
+                                    data-parent-ratio="1.9" alt="Real Bedford" data-image-resolution="100w"
+                                    src="https://images.squarespace-cdn.com/content/v1/619758344d16e93725c39d0a/b60879b9-e503-4231-b6a6-61d6b4951bd8/RBFC+-+Dark.png?format=100w">
+                            </a>
+                            <div class="image-slide-title">{{ event.team-b }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style type="text/css" id="design-grid-css">
+                #block-49000da106473166a42c .sqs-gallery-block-grid .sqs-gallery-design-grid {
+                    margin-right: -0px;
+                }
+
+                #block-49000da106473166a42c .sqs-gallery-block-grid .sqs-gallery-design-grid-slide .margin-wrapper {
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                }
+            </style>
+        </div>
+    </div>
+</div>
