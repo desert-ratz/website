@@ -30,7 +30,7 @@ background_color: "#1a1919"
 lang: en
 
 socials:
-  - discord: https://discord.gg/desertratz
+  discord: https://discord.gg/desertratz
   #facebook:           Altocomandoflottastellare
   #instagram:          flottastellare
   #youtube:            altocomandoflottastellare
@@ -70,7 +70,7 @@ defaults:
       path: ""
       type: posts
     values:
-      permalink: "/blog/:title/"
+      permalink: "/news/:title/"
       layout: post
       author:
       image: /images/logo_843x885.png
@@ -87,22 +87,14 @@ defaults:
 collections:
   posts:
     output: true
-    permalink: /blog/:title/
-
-  guide:
-    output: true
-    permalink: /guide/:title/
-
-  author:
-    output: true
-    permalink: /autore/:name/
+    permalink: /news/:title/
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
-permalink:          /blog/:title/
+permalink:          /news/:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -128,7 +120,7 @@ plugins:
   - jemoji
 
 paginate: 6
-paginate_path: "/blog/page:num/"
+paginate_path: "/news/page:num/"
 
 jekyll-mentions:
     base_url: https://github.com

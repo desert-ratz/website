@@ -4,18 +4,8 @@
 - title: About
   url: /about/
 
-- title: Blog
-  url: /blog/
+- title: News
+  url: /news/
 
 - title: Events
   url:  /events/
-
-- title: Video
-  url: /videotutorials/
-
-- title: Il Gioco
-  url: '#'
-  sublinks:
-    - title: Elite Dangerous
-      url: /elite/
-
