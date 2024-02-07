@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
- 
+
 <html>
 	<head>
 		{% include head.html %}
@@ -12,7 +12,7 @@
 
 				<!-- Header -->
 				<header id="header">
-					<a href="{{ "/" | prepend:site.baseurl }}" class="logo">{{site.h1title}}</a>
+					<a href="{{ "/" | prepend:site.baseurl }}" class="logo">{{site.title}}</a>
 				</header>
 
 				<!-- Nav -->
@@ -23,12 +23,12 @@
 					</nav>
 
 				<!-- Main -->
-				<div id="main">		
+				<div id="main">
 					<article class="post featured">
 						<header class="major">
 							<h2><a href="#">I video tutorials di CMDR COK7SETTE</a></h2>
 							<p>Segui anche tu i Video Tutorials del nostro Vice Ammiraglio per arrivare lá... dove nessun video è mai giunto prima
-							</p>					
+							</p>
 						<span class="image fit"><img src="/images/Elite-Division-png.png" alt=""></span>
 						</header>
 						<!-- Video in Evidenza -->
@@ -36,9 +36,9 @@
 						{% assign latestvideo = site.data.videos | sort: 'pubDate' | reverse %}
 						{% for video in latestvideo limit:1 %}
 						<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-								<iframe 
-									id="ytplayer" width="560" height="315" 
-									src="https://www.youtube-nocookie.com/embed/{{video.videoId}}?autoplay=0&amp;wmode=transparent" 
+								<iframe
+									id="ytplayer" width="560" height="315"
+									src="https://www.youtube-nocookie.com/embed/{{video.videoId}}?autoplay=0&amp;wmode=transparent"
 									frameborder="0" allowfullscreen>
 								</iframe>
 							</div>
@@ -49,7 +49,7 @@
 					<section class="posts">
 							{% assign sorted = site.data.videos | sort: 'pubDate' %}
 							{% for video in sorted %}
-						
+
 							 <div class="hoverbox" onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
 								<img src="/images/videodelcock.png" style="cursor:pointer" alt="{{video.title}} ITA - {{video.subtitle}}" title="{{video.title}} ITA - {{video.subtitle}}">
 									<div class="hovertext">
@@ -59,11 +59,11 @@
 										<h3>{{video.subtitle}}</h3>
 									</div>
 							 </div>
-					
+
 								<div class="video-container" style="display:none;">
-									<iframe 
-										width="560" height="315" 
-										src="https://www.youtube-nocookie.com/embed/{{video.videoId}}?autoplay=0&amp;wmode=transparent" 
+									<iframe
+										width="560" height="315"
+										src="https://www.youtube-nocookie.com/embed/{{video.videoId}}?autoplay=0&amp;wmode=transparent"
 										frameborder="0" allowfullscreen>
 									</iframe>
 								</div>

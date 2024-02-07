@@ -3,23 +3,36 @@
 # Site wide configuration
 ####################################
 #
-title:              Desert Ratz
-h1title:            Desert Ratz
-bio:                Blaze a Trail, Leave No Sand Unturned
-keywords:           desert, ratz, hll, hell let loose
-locale:             en
-baseurl: ""
-url: https://desert-ratz.com
+title:       Desert Ratz
+short_name:  RATZ
+motto:       Blaze a Trail, Leave No Sand Unturned
+keywords:    desert, ratz, hll, hell let loose
+locale:      en
+baseurl:     ""
+url:         https://desert-ratz.com
+lang:        en
+description: Desert Ratz are a hell let loose clan based in Europe
+
+#
+###################################
+# Socials
+###################################
+#
+socials:
+  discord:      https://discord.gg/desertratz
+  #facebook:    desertratz
+  #instagram:   desertratz
+  #youtube:     desertratz
+  #twitter:     desertratz
+  #telegram:    desertratz
 
 #
 ###################################
 # PWA Settings
 ####################################
 #
-name: "Alto Comando Flotta Stellare"
-short_name: "ACFS"
-lang_direction: "ltr"
-color: "#f07b05"
+lang_direction:   "ltr"
+color:            "#f07b05"
 background_color: "#1a1919"
 
 #
@@ -27,17 +40,8 @@ background_color: "#1a1919"
 # Jekyll-SEO-tag settings
 ####################################
 #
-lang: en
 analytics-id: G-Q6YD5NSC1F
 
-socials:
-  discord: https://discord.gg/desertratz
-  #facebook:           Altocomandoflottastellare
-  #instagram:          flottastellare
-  #youtube:            altocomandoflottastellare
-  #twitter:            twitter_username
-
-  #telegram:           flottastellare
 
 logo: /images/logo_843x885.png
 

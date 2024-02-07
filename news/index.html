@@ -19,7 +19,7 @@ last_modified_at: 2019-07-30
 
 				<!-- Header -->
 				<header id="header">
-					<a href="{{ "/" | prepend:site.baseurl }}" class="logo">{{site.h1title}}</a>
+					<a href="{{ "/" | prepend:site.baseurl }}" class="logo">{{site.title}}</a>
 				</header>
 
 
@@ -27,15 +27,15 @@ last_modified_at: 2019-07-30
 					<nav id="nav">
 
             {% include nav.html %}
-						
+
 					</nav>
 
 				<!-- Main -->
-				<div id="main">		
+				<div id="main">
           <article class="post featured">
             <header class="major">
               <h2><a href="#">Notizie dalla Galassia</a></h2>
-              <p>Segui il nostro blog per restare informato su tutte le attività dello Squadrone, 
+              <p>Segui il nostro blog per restare informato su tutte le attività dello Squadrone,
 								per aggiornarti con le guide che pubblichiamo e per conoscere i principali eventi della Galassia.
 							</p>
             </header>
@@ -63,7 +63,7 @@ last_modified_at: 2019-07-30
 				<footer>
 					<!-- pagination -->
 						{% if paginator.total_pages > 1 %}
-						<div class="pagination"> 
+						<div class="pagination">
 							{% if paginator.previous_page %}
 								<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">Prev</a>
 							{% endif %}
@@ -91,8 +91,8 @@ last_modified_at: 2019-07-30
 
 			<!-- Scripts -->
 			{% include scripts-main.html %}
-			{% include tracking.html %} 
-		
+			{% include tracking.html %}
+
    <!-- Lazy Load -->
    {% include lazyload.html %}
 
