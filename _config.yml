@@ -28,6 +28,7 @@ background_color: "#1a1919"
 ####################################
 #
 lang: en
+analytics-id: G-Q6YD5NSC1F
 
 socials:
   discord: https://discord.gg/desertratz
@@ -46,10 +47,10 @@ settings:
 author: ratz
 
 # Comments
-disqus_shortname:   flottastellare
+#disqus_shortname:   flottastellare
 
 #google-site-verification:
-analytics-id:       UA-147419241-1
+
 
 
 
