@@ -47,7 +47,7 @@ layout: null
 						from steam and gamepass</p>
 				</header>
 			</article>
-
+			{% include events.html %}
 			<!-- Posts -->
 			<section class="posts">
 				{% assign posts = site.posts | where: "sticky", true | sort: "date" %}
