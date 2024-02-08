@@ -46,11 +46,11 @@
   padding-right: 10px;
 }
 .margin-wrapper .event-score {
-  background-color: #483d2d;
+  background-color: #4f6070;
   box-sizing: border-box;
   font-weight: bold;
-  padding: .7em 1em;
-  border-radius: 1em;
+  padding: .10em 1em;
+  border-radius: 2px;
 }
 .team-name {
     font-size: 18px;
@@ -69,4 +69,10 @@
 
 .left {
   text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .team-name {
+      display: none !important;
+  }
 }
