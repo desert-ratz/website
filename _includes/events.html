@@ -1,5 +1,5 @@
 {% assign sorted_events = site.data.events | date: "%Y-%m-%d %H:%M" | sort: 'date' |  reverse %}
-<article class="post featured"><h2>EVENTS</h2>
+<section class="post featured"><h2>EVENTS</h2>
     {% for event in sorted_events %}
     {% assign event_timestamp = event.date | date: "%Y-%m-%d %H:%M" | date: "%s" %}
     {% assign current_timestamp = "now" | date: "%s" %}
@@ -51,5 +51,5 @@
 
     {% endfor %}
 
-</article>
+    </section>
 
