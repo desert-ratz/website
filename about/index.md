@@ -55,7 +55,6 @@ table.dataTable.display tbody tr:hover > .sorting_1, table.dataTable.order-colum
 </style>
 
 ## Desert Ratz
-
 On July 8th, 2023, our clan embarked on a journey fueled by friendship and a shared passion for competitive gaming. With humble beginnings, we gathered as a small group of friends, united by a common goal: to forge a formidable team capable of rivaling the best teams in Hell Let Loose. Inspired by the valor and tenacity of the 'Desert Rats' from the iconic World War II desert campaign, we sought to emulate their spirit of resilience, adaptability, and unwavering determination.
 
 From the onset, our clan set out to cultivate a culture of camaraderie, mutual support, and dedication to improvement. With every victory and setback, we remained steadfast in our commitment to growth and excellence, drawing inspiration from the legendary exploits of the Desert Rats as we carved our path to success.
