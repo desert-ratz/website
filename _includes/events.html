@@ -27,10 +27,13 @@
                 <div class="slide">
                     <div class="margin-wrapper">
                         <div class="event-score">
-                            {% if event_timestamp > current_timestamp %}
-                                {{ event.date | date: "%Y-%m-%d %H:%M" | date: "%H:%M" }}
-                            {% else %}
+                            {% if event.scores and event_timestamp < current_timestamp %}
                                 {{ event.scores[0] }} - {{ event.scores[1] }}
+                            {% else if event_timestamp < current_timestamp %}
+                                TBC
+                            {% else %}
+                                {{ event.date | date: "%Y-%m-%d %H:%M" | date: "%H:%M" }}
+
                             {% endif %}
                         </div>
                     </div>
