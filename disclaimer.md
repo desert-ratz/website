@@ -1,64 +1,53 @@
 ---
-title: Disclaimer e Licenza
+title: Disclaimer & License
 layout: page
-date: '2021-02-16'
-description: Disclaimer e Licenza d'uso del sito web
-lang: it_IT
+date: '2024-02-08'
+description: Disclaimer & License
 permalink: /about/disclaimer/
 ---
 ### DISCLAIMER
-L’accesso al sito è completamente gratuito ma comporta l’accettazione delle seguenti condizioni d’uso. Siete pregati di leggerle attentamente poiché **il solo fatto di proseguire nell’utilizzo o consultazione del sito costituisce completa accettazione delle condizioni** stesse da parte di ogni visitatore o utente.
+Access to the site is completely free of charge but implies acceptance of the following terms of use. Please read them carefully because the **mere fact of continuing to use or consult the site constitutes complete acceptance of the conditions** by each visitor or user.
 
-### Informazioni di cui alla legge 7 marzo 2001 n. 62
+### Warranties and Limitations of Liability
+The information published should be considered mere opinions or advice and never professional opinions. In addition, they may not always be comprehensive, complete, accurate or up-to-date. The administrator is not responsible in any way for the data reported on the site for any purpose. The use of the news, documents and information published is without any kind of guarantee and at the user's own risk. The administrator will not be held liable for direct or indirect damages, of any nature, deriving from the use of the information available on the site. The information is updated as deemed appropriate, without prior notice.
 
-Il presente sito non è un “prodotto editoriale diffuso al pubblico con periodicità regolare”, in quanto non viene aggiornato secondo scadenze predeterminate, bensì esclusivamente sulla base degli eventi ritenuti interessanti dall’autore. Mancando i requisiti della periodicità, della testata e la struttura, il presente sito si sottrae all’obbligo di registrazione di cui all’art. 5 L. 8 febbraio 1948 n. 47, né può essere in alcun modo ritenuto pubblicazione o periodico ai sensi delle leggi vigenti, avendo solo lo scopo di offrire uno spazio di riflessione personale su tematiche di interesse generale. Tutte le notizie citate hanno una fonte pubblica e sono da trattarsi come commenti e considerazioni alle notizie medesime. 
+If the user of the site finds errors, omissions and inaccuracies in the information published, or believes that the information or opinions published violate his rights or the rights of third parties, he is asked to write to the administrator using the addresses indicated in the [Privacy Policy](#) and we will immediately verify and remove from the site any materials, data, information or opinions that are incomplete, inaccurate or infringing the rights of third parties.
 
-Responsabile del sito web: Cristian Castellari, Imola, Italia (Codice Fiscale CSTCST71S30C265A)
+With regard to news, analysis, opinions published on the site but taken from other sites, please refer to the disclaimer of the relevant sites. The administrator can never be held responsible for the contents of external sites, linked by links from any page of the site, not being able to verify them continuously. Links are provided to you solely as a convenience to you, and the inclusion of any link does not imply any endorsement or control of the site or the opinions expressed therein.
 
-<span class="image fit"><img src="/images/Elite-Division-png.png" alt=""></span>
+<span class="image fit"><img src="/images/ratz-divider.png" alt=""></span>
 
-### Garanzie e limitazioni di responsabilità
-Le informazioni pubblicate devono ritenersi semplici opinioni o consigli e mai pareri professionali. Inoltre potrebbero non sempre essere esaurienti, complete, precise o aggiornate. L'amministratore non risponde in alcun modo dei dati riportati nel sito per qualsiasi finalità. L'uso delle notizie, dei documenti e delle informazioni pubblicate si intende senza alcun tipo di garanzia e a rischio e pericolo dell'utilizzatore. L'amministratore non sarà in alcun caso tenuto a rispondere di danni diretti o indiretti, di qualsiasi natura, derivanti dall'uso delle informazioni disponibili nel sito. Le informazioni vengono aggiornate qualora ciò sia ritenuto opportuno, senza alcuna previa comunicazione.
-
-Qualora l'utente del sito riscontri errori, omissioni ed inesattezze nelle informazioni pubblicate, ovvero ritenga che le informazioni o le opinioni pubblicate violino i propri diritti o i diritti di terzi, è pregato di scrivere all'amministratore tramite i recapiti indicati nella [Privacy Policy](https://www.iubenda.com/privacy-policy/69844068) e provvederemo a verificare e rimuovere immediatamente dal sito materiali, dati, informazioni o opinioni che risultino non completi, inesatti o che costituiscano violazione di diritti di terzi.
-
-Per quanto riguarda notizie, analisi, opinioni pubblicate sul sito ma tratte da altri siti, si rimanda al disclaimer dei relativi siti.
-L'amministratore non potrà mai essere ritenuto responsabile per i contenuti di siti esterni, collegati tramite link da una qualunque pagina del sito, non essendo in grado di verificarli continuamente. I link vengono forniti al visitatore esclusivamente per comodità degli utenti e l'inclusione di qualsiasi link non implica alcun avallo né controllo del relativo sito o delle opinioni ivi espresse.
-
-<span class="image fit"><img src="/images/Elite-Division-png.png" alt=""></span>
-
-### Notizie e Commenti
-<i class="fa fa-comments-o fa-3x fa-pull-left" aria-hidden="true" style="color: #f07b05;"></i> Il contenuto degli articoli presenti nel sito rappresenta il punto di vista dell'autore. In alcuni casi è consentito da parte degli utenti inserire dei **commenti** agli articoli, i quali commenti rappresentano esclusivamente il punto di vista dell'autore del commento medesimo, per cui l'utente che inserisce il commento si assume integralmente la responsabilità di quanto scritto.
+### News & Commentary
+<i class="fa fa-comments-o fa-3x fa-pull-left" aria-hidden="true" style="color: #f07b05;"></i> The content of the articles on the site represents the author's point of view. In some cases it is allowed for users to post comments on articles, which comments represent exclusively the point of view of the author of the comment itself, so the user who inserts the comment assumes full responsibility for what is written.
 
 
-L'amministratore non assume alcuna responsabilità dei commenti, ma si riserva la facoltà di rimuovere a proprio esclusivo ed insindacabile giudizio qualsiasi commento che risulti:
+The administrator assumes no responsibility for comments, but reserves the right to remove at his sole and unquestionable discretion any comment that results:
 
-- illecito, diffamatorio, razzista o calunnioso
-- istigatore all'odio o alla violenza
-- lesivo nei confronti di persone, istituzioni o religioni
-- lesivo della privacy altrui
-- dannoso per minori di età
-- lesivo nei confronti di marchi, brevetti e contenuti protetti dal diritto d'autore (copyright)
-- contenente dati personali di terzi
-- promotore di attività commerciali
+- unlawful, defamatory, racist or libelous
+- incitement to hatred or violence
+- harmful to persons, institutions or religions
+- detrimental to the privacy of others
+- harmful to minors
+- infringes trademarks, patents and copyrighted content
+- containing personal data of third parties
+- Promoter of commercial activities
 
-Per ulteriori informazioni sul trattamento dei dati nell'utilizzo del box commenti si rimanda all'[informativa privacy](https://www.iubenda.com/privacy-policy/69844068).
+For further information on the processing of data when using the comment box, please refer to the [Privacy Policy](#).
 
-Si fa presente che domande e richieste inserite nei commenti non comportano alcun obbligo da parte del titolare del sito di rispondere. In particolare non si risponderà a domande la cui risposta è presente già nell'articolo, a domande già risposte a seguito di altri commenti e in generale a domande inerenti attività commerciali (per queste si dovrà chiedere apposita consulenza a pagamento tramite la sezione Contatti).
+Please note that questions and requests included in the comments do not imply any obligation on the part of the site owner to respond. In particular, we will not answer questions whose answer is already present in the article, questions already answered as a result of other comments and in general questions related to commercial activities (for these you will have to ask for specific paid advice through the Contact section).
 
-<span class="image fit"><img src="/images/Elite-Division-png.png" alt=""></span>
+<span class="image fit"><img src="/images/ratz-divider.png" alt=""></span>
 
-### Licenza d'uso
+### License to use
 
-<i class="fa fa-creative-commons fa-3x fa-pull-left" aria-hidden="true" style="color: #f07b05;"></i> L’intero contenuto di questo sito è pubblicato secondo la licenza di utilizzo **Creative Commons**, salvo diverse indicazioni e salvo le rispettive licenze dei siti o autori eventualmente citati. E’ consentita la copia e la citazione di articoli, brani o parti di essi a condizione che sia accompagnata dall’indicazione del nome dell’autore (cioè l’amministratore e titolare del sito qualora non diversamente indicato) e della fonte <a href="https://flottastellare.it">flottastellare.it</a> con un link attivo al materiale condiviso. 
+<i class="fa fa-creative-commons fa-3x fa-pull-left" aria-hidden="true" style="color: #f07b05;"></i> The entire content of this site is published under the Creative Commons license, unless otherwise indicated and without prejudice to the respective licenses of any sites or authors mentioned. Copying and quoting articles, excerpts or parts of them is allowed provided that it is accompanied by the indication of the name of the author (i.e. the administrator and owner of the site unless otherwise indicated) and the source <a href="https://desert-ratz.com">desert-ratz.com</a> with an active link to the shared material.
 
-<p style="text-align: center;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Il sito web flottastellare.it è distribuito con licenza:<br /><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.</p>
+<p style="text-align: center;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="License Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />The desert-rats.com website is licensed under the Creative<br /><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Commons Attribution-ShareAlike 4.0 International license.</a>.</p>
 
-Sono consentiti i link alla home page o a pagine interne da altri siti, con esclusione di link provenienti da siti pornografici o da siti con contenuti palesemente antidemocratici, o che si propongono di veicolare idee fondate sulla superiorità o sull’odio razziale o etnico o religioso, ovvero incitino alla preparazione e/o alla commissione di atti di discriminazione per motivi razziali, etnici, nazionali o religiosi.
-Ogni violazione sarà perseguita in sede civile e penale.
+Links to the home page or internal pages from other sites are permitted, with the exception of links from pornographic sites or sites with blatantly anti-democratic content, or that aim to convey ideas based on racial, ethnic or religious superiority or hatred, or incite the preparation and/or commission of acts of discrimination on racial grounds, ethnic, national or religious. Any violation will be prosecuted in civil and criminal courts.
 
-<span class="image fit"><img src="/images/Elite-Division-png.png" alt=""></span>
+<span class="image fit"><img src="/images/ratz-divider.png" alt=""></span>
 
-Il presente sito è stato realizzato in HTML, Markdown e JavaScript, processato con [Jekyll](https://jekyllrb.com/) ed è hostato su [GitHub Pages](https://pages.github.com/)
+This site has been created in HTML, Markdown and JavaScript, processed with [Jekyll](https://jekyllrb.com/) and is hosted on [GitHub Pages](https://pages.github.com/)
 
-Documento aggiornato alla data del **16 Febbraio 2021**
+Document updated on **08 February 2024**
