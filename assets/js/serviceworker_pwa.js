@@ -4,7 +4,7 @@ if ("serviceWorker" in navigator) {
     } else {
       // Register the service worker
       navigator.serviceWorker
-      .register("https://flottastellare.it/serviceworker.js", {
+      .register("https://desert-ratz.com/serviceworker.js", {
           scope: "./"
         })
         .then(function (reg) {
