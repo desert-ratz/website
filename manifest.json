@@ -5,13 +5,10 @@ layout: none
     "lang": "{{ site.language }}",
     "dir": "{{ site.lang_direction }}",
     "name": {
-        {
-            site.title | smartify | jsonify
-        }
+        {{ site.title | smartify | jsonify }}
     },
     "short_name": {
-        { site.short_name | smartify | jsonify
-        }
+        {{ site.short_name | smartify | jsonify }}
     },
     "icons": [
         {
