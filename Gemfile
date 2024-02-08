@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+gem 'jekyll', '~> 4.3'
 
 group :jekyll_plugins do
     gem "jekyll-sitemap"
@@ -11,8 +12,13 @@ group :jekyll_plugins do
     gem 'jemoji'
 end
 
-gem 'wdm', '>= 0.1.1' if Gem.win_platform?
-gem "rack", ">= 3.0.9"
-gem "addressable", ">= 2.8.6"
-gem "nokogiri", ">= 1.16.2"
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
+    gem "tzinfo"
+    gem "tzinfo-data"
+  end
+
+  # Performance-booster for watching directories on Windows
+  gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 gem "webrick", "~> 1.8.1"
