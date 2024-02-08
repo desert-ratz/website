@@ -1,9 +1,9 @@
----
+<center>---
 layout: post
 title:  "Thursday Night League Goes Live!"
 date:   02-01-2024
 excerpt: "TNL week one starts this week!."
-image: "/images/18vs18.png"
+image: "/images/18vs18.png"</center>
 
 sticky: no
 ---
