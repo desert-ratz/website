@@ -4,6 +4,7 @@
 #
 # - date: 2024-02-08 19:30:00
 #   categoty: <the event category>
+#   map: <map or point>
 #   teams:
 #     - <team 1>
 #     - <team 2>
@@ -13,6 +14,7 @@
 
 - date: 2024-02-08 19:30:00
   category: TNL
+  map: Yellow House
   teams:
     - RATZ
     - P.A.L
@@ -21,6 +23,7 @@
     - 0
 - date: 2024-02-01 19:30:00
   category: TNL
+  map: Yellow House
   teams:
     - RATZ
     - MoB
