@@ -6,7 +6,7 @@ excerpt: "Patch 14.7 is now live on all platforms!
 This update is primarily focused on bug fixing and enhancing the in-game experience. This version also targets some of the crash issues that console players have been incurring.
 Up next is patch 14.8 - a larger, content-heavy update that we'll expand on in Dev Briefs soon.
 Thank you to everyone who participated in our Mortain PTE. The feedback has been invaluable, and we will be detailing what’s changed in the weeks ahead."
-image: "/images/hll-patch-147-now-live/patch14.7.png"
+image: "/images/posts/hll-patch-147-now-live/patch14.7.png"
 tags:
 author:
 last_modified_at: 01-02-2024

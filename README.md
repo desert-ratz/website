@@ -1,38 +1,11 @@
-# o7 CMDRs!
-L'Alto Comando Flotta Stellare (**ACFS**)  è lo squadrone che riunisce al suo interno giocatori indipendenti sparsi per la galassia; per questa ragione l'ingresso è libero e garantito a tutti. Accogliamo con favore tutti i comandanti che desiderano partecipare al gioco attivamente, aiutandoci ad espandere la nostra minor faction all'interno del mondo di Elite: Dangerous, ma anche i nuovi giocatori.
+## How to use this theme
 
-## Cosa facciamo
+This site is based on Jekyll. Simply, clone this repository, move inside its directory, and run `bundle install`.
 
-Le nostre attività ed interessi sono rivolte a tutte le opportunità che l'universo di **Elite: Dangerous** ha da offrire:
-- Mining
-- Commercio 
-- Bounty hunting 
-- Esplorazione
-- Xeno ricerca 
-- Xeno hunting
-  
-Inoltre organizziamo piccoli campionati CQC, corse attraverso i canyon e rally con i nostri amati SRV!<br>
-Soprattutto cerchiamo di divertirci insieme, condividendo ogni giorno le nostre esperienze e conoscenze. 
+After all dependencies have been downloaded, run `bundle exec jekyll serve`.
 
-## BGS (Background Simulation)
+The site will be visible at the local address [http://127.0.0.1:4000/][local].
 
-Ci siamo stabiliti nel sistema [**Wong Sher**](https://inara.cz/galaxy-starsystem/12424/), home system della nostra minor faction **Flotta Stellare**.<br>
-Avere un posto da chiamare *casa* è per noi essenziale e ci da un grande senso di appartenenza ed aiuta il gruppo.
-
-## Come svolgiamo le attività:
-
-La nostra fazione va continuamente sostenuta svolgendo missioni e attività per essa.
-L’unica regola è quella di giocare il più possibile in modalità **“open”**.
-
-## Come usare questo tema
-
-Questo sito è basato su Jekyll. Semplicemente, clona questo repository, spostati all'interno della sua directory ed esegui `bundle install`.
-
-Dopo che tutte le dipendenze saranno state scaricate, esegui `bundle exec jekyll serve`.
-
-Il sito sarà visibile all'indirizzo locale [http://127.0.0.1:4000/][local].
-
-Fly safe, commander!
 
 [zip]: https://github.com/iwiedenm/jekyll-theme-massively-src/archive/master.zip
 [local]: http://127.0.0.1:4000/
