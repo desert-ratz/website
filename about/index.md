@@ -54,8 +54,10 @@ table.dataTable.display tbody tr:hover > .sorting_1, table.dataTable.order-colum
     background-color: #b16111;
 }
 </style>
-## Alto Comando Flotta Stellare
+images/logo.png
 
-L'Alto Comando Flotta Stellare (**ACFS**)  è lo squadrone che riunisce al suo interno giocatori indipendenti sparsi per la galassia garantendo loro una casa lontano da casa; per questa ragione l'ingresso è libero e garantito a tutti, basta fare richiesta, in modo da rendere meno solitaria la vastità della galassia di Elite Dangerous.
+## Desert Ratz
+
+BLAH BLAH BLAH 
 
 
