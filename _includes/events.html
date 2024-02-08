@@ -1,5 +1,5 @@
 {% assign sorted_events = site.data.events | date: "%Y-%m-%d %H:%M" | sort: 'date' |  reverse %}
-<section class="post featured"><h2>EVENTS</h2>
+<section class="event featured"><h2>EVENTS</h2>
     {% for event in sorted_events %}
     {% assign event_timestamp = event.date | date: "%Y-%m-%d %H:%M" | date: "%s" %}
     {% assign current_timestamp = "now" | date: "%s" %}
@@ -15,10 +15,11 @@
             <div class="event-grid">
                 <div class="slide">
                     <div class="margin-wrapper">
-                        <div class="team-name left">{{ site.data.teams[team_1].name }} ({{ event.teams[0] }})</div>
+                        <div class="team-name left">{{ site.data.teams[team_1].name }}</div>
                         {% if event.teams[0] and site.data.teams[team_1] %}
                         <div class="image-slide-anchor right">
                             <img class="team-icon" src="{{ site.data.teams[team_1].icon | default: '/images/teams/default.png' }}" alt="{{ event.teams[0] }}">
+                            <div class="team-tag">{{ event.teams[0] }}</div>
                         </div>
                         {% endif %}
                     </div>
@@ -28,6 +29,8 @@
                         <div class="event-score">
                             {% if event_timestamp > current_timestamp %}
                                 {{ event.date | date: "%Y-%m-%d %H:%M" | date: "%H:%M" }}
+                            {% elsif event.scores == null %}
+                                TBC
                             {% else %}
                                 {{ event.scores[0] }} - {{ event.scores[1] }}
                             {% endif %}
@@ -39,9 +42,10 @@
                         {% if event.teams[1] and site.data.teams[team_2] %}
                         <div class="image-slide-anchor left">
                             <img class="team-icon" src="{{ site.data.teams[team_2].icon | default: '/images/teams/default.png' }}" alt="{{ event.teams[1] }}">
+                            <div class="team-tag">{{ event.teams[1] }}</div>
                         </div>
                         {% endif %}
-                        <div class="team-name right">{{ site.data.teams[team_2].name }} ({{ event.teams[1] }})</div>
+                        <div class="team-name right">{{ site.data.teams[team_2].name }}</div>
                     </div>
                 </div>
             </div>
