@@ -15,10 +15,11 @@
             <div class="event-grid">
                 <div class="slide">
                     <div class="margin-wrapper">
-                        <div class="team-name left">{{ site.data.teams[team_1].name }} ({{ event.teams[0] }})</div>
+                        <div class="team-name left">{{ site.data.teams[team_1].name }}</div>
                         {% if event.teams[0] and site.data.teams[team_1] %}
                         <div class="image-slide-anchor right">
                             <img class="team-icon" src="{{ site.data.teams[team_1].icon | default: '/images/teams/default.png' }}" alt="{{ event.teams[0] }}">
+                            <div class="team-tag">{{ event.teams[0] }}</div>
                         </div>
                         {% endif %}
                     </div>
@@ -39,9 +40,10 @@
                         {% if event.teams[1] and site.data.teams[team_2] %}
                         <div class="image-slide-anchor left">
                             <img class="team-icon" src="{{ site.data.teams[team_2].icon | default: '/images/teams/default.png' }}" alt="{{ event.teams[1] }}">
+                            <div class="team-tag">{{ event.teams[1] }}</div>
                         </div>
                         {% endif %}
-                        <div class="team-name right">{{ site.data.teams[team_2].name }} ({{ event.teams[1] }})</div>
+                        <div class="team-name right">{{ site.data.teams[team_2].name }}</div>
                     </div>
                 </div>
             </div>
