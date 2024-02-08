@@ -1,9 +1,13 @@
+# format each team as follows:
+# <short-name>:
+#   name: <team-name>
+#   icon: <path to the team picture>(optional)
+
 RATZ:
   name: Desert Ratz
   icon: /images/teams/ratz_100x100.png
 MoB:
   name: Master of Beers
-  icon: /images/teams/mob_100x100.png
 P.A.L:
   name: Parate ad Agilem Legionem, quia ad vos venit
-  icon: /images/teams/pal_100x100.png
+

@@ -1,3 +1,16 @@
+# To add new events format them like below, the date format must be as shown
+# The "scores" section is optional, if removed the time of the event is shown
+# if the scores are populated, they will be shown on the page
+#
+# - date: 2024-02-08 19:30:00
+#   categoty: <the event category>
+#   teams:
+#     - <team 1>
+#     - <team 2>
+#   scores:
+#     - <team 1 score>
+#     - <team 2 scpre>
+
 - date: 2024-02-08 19:30:00
   category: TNL
   teams:
