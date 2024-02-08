@@ -53,10 +53,9 @@ table.dataTable.display tbody tr:hover > .sorting_1, table.dataTable.order-colum
     background-color: #b16111;
 }
 </style>
-images/logo.png
 
 ## Desert Ratz
 
-BLAH BLAH BLAH 
+Desert Ratz clan was formed on BLAH BLAH BLAH
 
 
