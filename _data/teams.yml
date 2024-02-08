@@ -1,9 +1,9 @@
-- tag: RATZ
+RATZ:
   name: Desert Ratz
-  icon: /images/teams/ratz.png
-- tag: MoB
+  icon: /images/teams/ratz_100x100.png
+MoB:
   name: Master of Beers
-  icon: /images/teams/ratz.png
-- tag: LL
-  name: Lost Legion
-  icon: /images/teams/ratz.png
+  icon: /images/teams/mob_100x100.png
+P.A.L:
+  name: Parate ad Agilem Legionem, quia ad vos venit
+  icon: /images/teams/pal_100x100.png
