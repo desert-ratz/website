@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About" 
-description: About Desert Ratz Clan: true
+description: About Desert Ratz Clan
 image: "/images/images/logo.png"
 last_modified_at: 2024-02-02
 ---
