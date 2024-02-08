@@ -9,5 +9,5 @@ sticky: no
 ---
 
 
-La partenza prevista è slittata di 24 ore per colpa di alcune noie ai propulsori 5D dell'Enterprise.<br>
+TNL week one starts this week! Ratz take on MOB in the eu League.<br>
 
