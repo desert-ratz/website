@@ -15,7 +15,8 @@ P.A.L:
   name: Parate ad Agilem Legionem
   icon: /images/teams/pal_100x100.png
 LTU:
-  name: Lithuanian Tribune
+  name: LTU
+  icon: /images/teams/ltu_100x100.png
 INV:
   name: Invictus
   icon: /images/teams/inv_100x100.png
