@@ -125,7 +125,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-redirect-from
 
 paginate: 6
 paginate_path: "/news/page:num/"
