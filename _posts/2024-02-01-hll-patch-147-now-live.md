@@ -4,10 +4,8 @@ title:  "HLL PATCH 14.7 | Now Live"
 date:   01-02-2024
 excerpt: "Patch 14.7 is now live on all platforms!"
 image: "/images/posts/hll-patch-147-now-live/patch14.7.png"
-tags:
-author:
 last_modified_at: 01-02-2024
-sticky: no
+pin: no
 ---
 
 This update is primarily focused on bug fixing and enhancing the in-game experience. This version also targets some of the crash issues that console players have been incurring.

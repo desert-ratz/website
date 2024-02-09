@@ -1,96 +1,68 @@
 ---
-layout: null
+layout: default
 title: News
-description:
-last_modified_at: 2024-02-08
 ---
-<!DOCTYPE HTML>
+{% include lang.html %}
 
-<html>
-	<head>
-    {% include head.html %}
-		{% seo %}
-	</head>
-	<body class="is-loading">
+{% assign pinned = site.posts | where: 'pin', 'true' %}
+{% assign default = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+{% assign posts = '' | split: '' %}
 
-				<!-- Header -->
-				<header id="header">
-					<a href="{{ "/" | prepend:site.baseurl }}" class="logo">{{site.title}}</a>
-				</header>
+<!-- Get pinned posts -->
+
+{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
+{% assign pinned_num = pinned.size | minus: offset %}
+
+{% if pinned_num > 0 %}
+  {% for i in (offset..pinned.size) limit: pinned_num %}
+    {% assign posts = posts | push: pinned[i] %}
+  {% endfor %}
+{% else %}
+  {% assign pinned_num = 0 %}
+{% endif %}
+
+<!-- Get default posts -->
+
+{% assign default_beg = offset | minus: pinned.size %}
+
+{% if default_beg < 0 %}
+  {% assign default_beg = 0 %}
+{% endif %}
+
+{% assign default_num = paginator.posts | size | minus: pinned_num %}
+{% assign default_end = default_beg | plus: default_num | minus: 1 %}
+
+{% if default_num > 0 %}
+  {% for i in (default_beg..default_end) %}
+    {% assign posts = posts | push: default[i] %}
+  {% endfor %}
+{% endif %}
 
 
-				<!-- Nav -->
-					<nav id="nav">
 
-            {% include nav.html %}
+<article class="post featured">
+  	<header class="major">
+    	<h2><a href="#">News from the battlefield</a></h2>
+  	</header>
+</article>
+<!-- Post -->
+<section class="posts">
+	{% for post in posts %}
+		<article>
+			<header>
+				<span class="date">{{ post.date | date_to_string }}</span>
+				<h2><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a></h2>
+			</header>
+			<a href="{{ post.url | prepend:site.baseurl }}" class="image fit"><img src="/images/blank.png" alt="" data-echo="{{ post.image | prepend:site.baseurl }}" /></a>
+			<p>{{ post.excerpt }}</p>
+			<ul class="actions">
+				<li><a href="{{ post.url | prepend:site.baseurl }}" class="button">Keep Reading...</a></li>
+			</ul>
+		</article>
+	{% endfor %}
+</section>
 
-					</nav>
-
-				<!-- Main -->
-				<div id="main">
-          <article class="post featured">
-            <header class="major">
-              <h2><a href="#">News from the battlefield</a></h2>
-            </header>
-
-          </article>
-					<!-- Post -->
-					<section class="posts">
-						{% for post in paginator.posts %}
-							<article>
-								<header>
-									<span class="date">{{ post.date | date_to_string }}</span>
-									<h2><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a></h2>
-								</header>
-								<a href="{{ post.url | prepend:site.baseurl }}" class="image fit"><img src="/images/blank.png" alt="" data-echo="{{ post.image | prepend:site.baseurl }}" /></a>
-								<p>{{ post.excerpt }}</p>
-								<ul class="actions">
-									<li><a href="{{ post.url | prepend:site.baseurl }}" class="button">Keep Reading...</a></li>
-								</ul>
-							</article>
-						{% endfor %}
-
-					</section>
-
-				<!-- Footer -->
-				<footer>
-					<!-- pagination -->
-						{% if paginator.total_pages > 1 %}
-						<div class="pagination">
-							{% if paginator.previous_page %}
-								<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">Prev</a>
-							{% endif %}
-
-							{% for page in (1..paginator.total_pages) %}
-								{% if page == paginator.page %}
-									<span class="page active">{{ page }}</span>
-								{% elsif page == 1 %}
-									<a href="/blog/">{{ page }}</a>
-								{% else %}
-									<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page">{{ page }}</a>
-								{% endif %}
-							{% endfor %}
-
-							{% if paginator.next_page %}
-								<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
-							{% endif %}
-						</div>
-						{% endif %}
-				</footer>
-			</div>
-        {% include foot.html %}
-
-			</div>
-
-			<!-- Scripts -->
-			{% include scripts-main.html %}
-			{% include tracking.html %}
-
-   <!-- Lazy Load -->
-   {% include lazyload.html %}
-
-	</body>
-</html>
+{% if paginator.total_pages > 1 %}
+  {% include post-paginator.html %}
+{% endif %}

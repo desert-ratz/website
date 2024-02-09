@@ -12,6 +12,12 @@
 #     - <team 1 score>
 #     - <team 2 scpre>
 
+- date: 2024-02-15 19:10:00
+  category: TNL
+  map: TBC
+  teams:
+    - RATZ
+    - TBC
 - date: 2024-02-08 19:30:00
   category: TNL
   map: Yellow House

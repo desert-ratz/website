@@ -3,6 +3,8 @@
 #   name: <team-name>
 #   icon: <path to the team picture>(optional)
 
+TBC:
+  name: TBC
 RATZ:
   name: Desert Ratz
   icon: /images/teams/ratz_100x100.png
@@ -12,4 +14,11 @@ MoB:
 P.A.L:
   name: Parate ad Agilem Legionem
   icon: /images/teams/pal_100x100.png
-
+LTU:
+  name: Lithuanian Tribune
+INV:
+  name: Invictus
+  icon: /images/teams/inv_100x100.png
+RF:
+  name: Refuze
+  icon: /images/teams/rf_100x100.png

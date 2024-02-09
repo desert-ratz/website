@@ -1,9 +1,8 @@
 ---
-layout: page
+# the default layout is 'page'
 title: "About"
 description: About Desert Ratz Clan
-image: "/images/images/logo.png"
-last_modified_at: 2024-02-02
+order: 1
 ---
 
 ## Desert Ratz

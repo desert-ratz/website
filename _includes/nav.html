@@ -1,42 +1,39 @@
-<!-- This finds the current page so it can be highlighted. -->
-{% for entry in site.data.navigation %}
-{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
-    {% if fullurl == page.url %}
-        {% assign current_page = fullurl %}
-        {% break %}
-    {% elsif page.url contains fullurl %}
-        {% assign current_page = fullurl %}
-    {% endif %}
-{% endfor %}
 
 <!-- Then we build the nav bar. -->
-
 <ul class="links">
-    {% for entry in site.data.navigation %}
-        {% if entry.url == current_page %}
+    <!-- Home link -->
+    <li {% if page.url == "/" %} class="active"{% endif %}>
+        <a href="{{ site.baseurl }}/">Home</a>
+    </li>
+    <!-- Navigation from tabs collection -->
+    {% for entry in site.tabs %}
+        {% if entry.url == page.url %}
             {% assign current = ' class="active"' %}
         {% else %}
             {% assign current = null %}
         {% endif %}
-        {% assign sublinks = entry.sublinks %}
-        {% if sublinks %}
-
-        <li{{ current }}>
-            <a href="{{ site.baseurl }}{{ entry.url }}" class="trigger-drop">{{ entry.title }} ▼</a>
-            <ul class="drop" style="list-style: none;">
-                {% for sublink in sublinks %}
-                <li class="active"><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </li>
+        {% assign parent_tab = site.tabs | where: 'title', entry.parent | first %}
+        {% assign sublinks = site.tabs | where: 'parent', entry.title %}
+        {% if sublinks.size > 0 %}
+            <li{{ current }}>
+                <a href="{{ site.baseurl }}{{ entry.url }}" class="trigger-drop">{{ entry.title }} ▼</a>
+                <ul class="drop" style="list-style: none;">
+                    {% for sublink in sublinks %}
+                        <li class="active"><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
         {% else %}
             <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
         {% endif %}
     {% endfor %}
+    <li{% if page.url == "/news/" %} class="active"{% endif %}>
+        <a href="{{ site.baseurl }}/news/">News</a>
+    </li>
 </ul>
 
 <ul class="icons">
-  <li><a href="/search/" class="icon fa-search" title="Search..."><span class="label">Search</span></a></li>
+  <li><a href="/search/" class="icon fa-search" title="{{ site.data.locales[lang].search.hint | capitalize }}..."><span class="label">{{ site.data.locales[lang].search.hint | capitalize }}...</span></a></li>
   {% if site.socials.facebook %}
   <li><a href="https://facebook.com/{{site.socials.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
   {% endif %}

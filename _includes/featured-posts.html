@@ -1,0 +1,54 @@
+
+{% assign pinned = site.posts | where: 'pin', 'true' | limit: 2 %}
+{% assign default = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' | limit: 2 %}
+
+{% assign posts = '' | split: '' %}
+
+<!-- Get pinned posts -->
+
+{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
+{% assign pinned_num = pinned.size %}
+
+{% if pinned_num > 0 %}
+  {% for i in pinned_num %}
+    {% assign posts = posts | push: pinned[i] %}
+  {% endfor %}
+{% endif %}
+
+<!-- Get default posts -->
+
+{% assign default_beg = pinned.size %}
+
+{% if default_beg < 0 %}
+  {% assign default_beg = 0 %}
+{% endif %}
+
+{% assign default_num = default | size %}
+{% assign default_end = default_beg | plus: default_num | minus: 1 %}
+
+{% if default_num > 0 %}
+  {% for i in (default_beg..default_end) %}
+    {% assign posts = posts | push: default[i] %}
+  {% endfor %}
+{% endif %}
+
+{% if posts.size > 0 %}
+<section class="posts">
+    {% for post in posts %}
+    <article>
+        <header>
+            <span class="date">Featured Post {% if post.pin == true %}<i class="fa fa-thumb-tack"
+                    aria-hidden="true"></i>{% endif %}</span>
+            <h2><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a></h2>
+        </header>
+        <a href="{{ post.url | prepend:site.baseurl }}" class="image fit"><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
+                alt="" data-echo="{{ post.image | prepend:site.baseurl }}" /></a>
+        <p>{{ post.excerpt }}</p>
+        <ul class="actions">
+            <li><a href="{{ post.url | prepend:site.baseurl }}" class="button">Keep Reading...</a></li>
+        </ul>
+    </article>
+    {% endfor %}
+</section>
+{% endif %}
