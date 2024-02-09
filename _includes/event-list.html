@@ -11,7 +11,7 @@
                     <strong>{{ event.date | date: "%Y-%m-%d %H:%M" | date: "%a %d %B" | date_to_string: "ordinal" }} - {{ event.category }}</strong><br />
                 </div>
                 <div class="text-center small">
-                    {{ event.map | default "" }}
+                    {{ event.map | default "" }} {%if event.stream%}| <a href="{{ event.stream }}">Stream</a>{% endif %}
                 </div>
             </div>
             <div class="event-block">

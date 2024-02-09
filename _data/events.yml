@@ -21,6 +21,7 @@
 - date: 2024-02-08 19:30:00
   category: TNL
   map: Yellow House
+  stream: https://www.twitch.tv/videos/2057020013
   teams:
     - RATZ
     - P.A.L
@@ -30,6 +31,7 @@
 - date: 2024-02-01 19:30:00
   category: TNL
   map: Yellow House
+  stream: https://www.twitch.tv/videos/2050194880
   teams:
     - RATZ
     - MoB
