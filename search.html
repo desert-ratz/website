@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Archivi - Cerca nel sito
-description: Archivi, tag e storia del blog di Alto Comando Flotta Stellare
+title: Search
+description: Search the archives
 last_modified_at: 2021-05-05
 ---
 <!-- HTML elements for search -->
-<input type="text" id="search-input" placeholder="Cerca nel blog...">
+<input type="text" id="search-input" placeholder="Search...">
 <div class="search-results" style="display:block;">
 <ul id="results" class="search-results-ul"></ul>
 </div>
@@ -18,20 +18,8 @@ last_modified_at: 2021-05-05
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results'),
-    searchResultTemplate: '<li><a href="{url}" tabindex="1"><p>{title}</p><span>{url}</span></a></li>', 
-    noResultsText: '<i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i>&nbsp;Nessun Risultato...',
+    searchResultTemplate: '<li><a href="{url}" tabindex="1"><p>{title}</p><span>{url}</span></a></li>',
+    noResultsText: '<i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i>&nbsp;No Result...',
     json: '/search.json'
   })
 </script>
-
-<!-- Tag Cloud -->
-<h2>Tag Cloud</h2>
-{% assign tags = site.tags | sort %}
-{% for tag in tags %}
- <span class="site-tag">
-    <a href="/search/tag/{{ tag | first | slugify }}/"
-        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-    </a>&nbsp;
-</span>
-{% endfor %}
