@@ -7,9 +7,8 @@ order: 3
 
 ## Wallpapers
 
-![image](/images/pages/media/wallpaper/Desert_Ratz_Wallpaper_01-1920x1080.jpg)
-
-![image](/images/pages/media/wallpaper/Desert_Ratz_Wallpaper_02-1920x1080.jpg)
+<img src="/images/pages/media/wallpaper/Desert_Ratz_Wallpaper_01-1920x1080.jpg" alt="Wallpaper 1" width="200"/>
+<img src="/images/pages/media/wallpaper/Desert_Ratz_Wallpaper_02-1920x1080.jpg" alt="Wallpaper 2" width="200"/>
 
 ### Wallpaper Engine
 
