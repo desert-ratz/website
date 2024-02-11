@@ -1,0 +1,32 @@
+%text-highlight {
+    color: inherit;
+    font-weight: 600;
+  }
+  %link-hover {
+    color: #d2603a !important;
+    border-bottom: 1px solid #d2603a;
+    text-decoration: none;
+  }
+
+  %link-color {
+    color: var(--link-color);
+  }
+  %link-underline {
+    border-bottom: 1px solid var(--link-underline-color);
+  }
+  %cursor-pointer {
+    cursor: pointer;
+  }
+  %tag-hover {
+    background: var(--tag-hover);
+    transition: background 0.35s ease-in-out;
+  }
+  %no-bottom-border {
+    border-bottom: none;
+  }
+
+  @mixin label($font-size: 1rem, $font-weight: 600, $color: var(--label-color)) {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+  }

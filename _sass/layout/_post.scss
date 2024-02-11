@@ -1,0 +1,138 @@
+@mixin btn-sharing-color($light-color, $important: false) {
+    @if $important {
+      color: var(--btn-share-color, $light-color) !important;
+    }
+
+    @else {
+      color: var(--btn-share-color, $light-color);
+    }
+  }
+
+.post-tail-wrapper {
+    margin-top: 6rem;
+    border-bottom: 1px double var(--main-border-color);
+    font-size: 0.85rem;
+
+    .post-tail-bottom a {
+      color: inherit;
+    }
+
+    .license-wrapper {
+      line-height: 1.2rem;
+
+      >a {
+        @extend %text-highlight;
+
+        &:hover {
+          @extend %link-hover;
+        }
+      }
+
+      span:last-child {
+        font-size: 0.85rem;
+      }
+    }
+
+    /* .license-wrapper */
+
+    .post-meta a:not(:hover) {
+      @extend %link-underline;
+    }
+
+    .share-wrapper {
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      .share-icons {
+        font-size: 1.2rem;
+
+        >* {
+          margin-left: 0.25rem;
+
+          &:hover {
+            i {
+              @extend %btn-share-hovor;
+            }
+          }
+        }
+
+        button {
+          position: relative;
+          bottom: 2px;
+          padding: 0;
+
+          @extend %cursor-pointer;
+        }
+
+        a :hover {
+          text-decoration: none;
+        }
+
+        .fa-square-x-twitter {
+          @include btn-sharing-color(black);
+        }
+
+        .fa-facebook-square {
+          @include btn-sharing-color(rgb(66, 95, 156));
+        }
+
+        .fa-telegram {
+          @include btn-sharing-color(rgb(39, 159, 217));
+        }
+
+        .fa-linkedin {
+          @include btn-sharing-color(rgb(0, 119, 181));
+        }
+
+        .fa-weibo {
+          @include btn-sharing-color(rgb(229, 20, 43));
+        }
+      }
+
+      /* .share-icons */
+
+      .fas.fa-link {
+        @include btn-sharing-color(rgb(171, 171, 171));
+      }
+    }
+
+    /* .share-wrapper */
+  }
+
+  .post-tags {
+    line-height: 2rem;
+
+    .post-tag {
+      &:hover {
+        @extend %link-hover;
+        @extend %tag-hover;
+        @extend %no-bottom-border;
+      }
+    }
+  }
+
+  %btn-share-hovor {
+    color: var(--btn-share-hover-color) !important;
+  }
+
+  .share-label {
+    @include label(inherit, 400, inherit);
+
+    &::after {
+      content: ':';
+    }
+  }
+
+  @media all and (max-width: 576px) {
+    .post-tail-bottom {
+      flex-wrap: wrap-reverse !important;
+
+      >div:first-child {
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+  }

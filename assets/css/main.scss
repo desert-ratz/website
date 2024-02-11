@@ -14,8 +14,6 @@ $background_image: '{{site.background_image | prepend:site.baseurl }}';
 @import 'layout/navmod';
 @import 'components/video';
 @import 'components/collapsible';
-@import 'font-awesome.min.css';
-@import 'fork-awesome.min.css';
 @import 'eurocaps.css';
 @import 'acfs-elitedangerous.css';
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900');
@@ -58,6 +56,9 @@ $background_image: '{{site.background_image | prepend:site.baseurl }}';
 	@import 'base/page';
 	@import 'base/typography';
 
+// Addon
+    @import 'addon/module';
+
 // Component.
 
 	@import 'components/box';
@@ -80,3 +81,4 @@ $background_image: '{{site.background_image | prepend:site.baseurl }}';
 	@import 'layout/main';
 	@import 'layout/footer';
 	@import 'layout/navPanel';
+	@import 'layout/post';

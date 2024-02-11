@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+{% include lang.html %}
+
 <section class="post">
   <header class="major">
     <span class="date">{{page.date | date_to_string}}</span>
@@ -10,22 +13,43 @@ layout: default
   <div class="image main"><img src="{{page.image}}" alt=""></div>
   <p>{{content}}</p>
 
-  <sup>Tags: [
-    {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="/search/tag/{{ tag_name | slugify }}/" rel="nofollow">
-      <nobr>{{ tag_name | slugify }}</nobr>&nbsp;
-    </a>
-    {% endfor %}
-    ]</sup>
+  <div class="post-tail-wrapper text-muted">
+    <!-- tags -->
+    {% if page.tags.size > 0 %}
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        {% for tag in page.tags %}
+          <a
+            href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
+            class="post-tag no-text-decoration"
+          >
+            {{- tag -}}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
 
-  {% assign author = site.data.authors[page.author] %}
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        {% if site.data.locales[lang].copyright.license.template %}
+          {% capture _replacement %}
+        <a href="{{ site.data.locales[lang].copyright.license.link }}">
+          {{ site.data.locales[lang].copyright.license.name }}
+        </a>
+        {% endcapture %}
 
-  {% if author %}
-  <section class="authorbox">
-    {% include author.html %}
-  </section>
-  {% endif %}
+          {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }}
+        {% endif %}
+      </div>
 
-  </section>
+      {% include post-sharing.html lang=lang %}
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </section>
