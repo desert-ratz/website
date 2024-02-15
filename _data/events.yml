@@ -15,10 +15,13 @@
 - date: 2024-02-15 19:30:00
   category: TNL
   map: Rue de la gare
-  stream: https://www.twitch.tv/ezy0252
+  stream: https://www.twitch.tv/videos/2063666029
   teams:
     - RATZ
     - LTU
+  scores:
+    - 0
+    - 6
 - date: 2024-02-08 19:30:00
   category: TNL
   map: Yellow House
