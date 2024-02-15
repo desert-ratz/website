@@ -12,6 +12,12 @@
 #     - <team 1 score>
 #     - <team 2 scpre>
 
+- date: 2024-02-22 19:30:00
+  category: TNL
+  map: TBC
+  teams:
+    - RATZ
+    - ETKS
 - date: 2024-02-15 19:30:00
   category: TNL
   map: Rue de la gare
