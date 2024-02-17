@@ -23,3 +23,6 @@ INV:
 RF:
   name: Refuze
   icon: /images/teams/rf_100x100.png
+ETKS:
+  name: EXD / KSK
+  icon: /images/teams/etks_100x100.png
