@@ -55,8 +55,8 @@ nav {
       }
       &:hover > .drop {
         display: block;
-        animation: fadeInRight 0.3s ease;
         -webkit-animation: fadeInRight 0.3s ease;
+        animation: fadeInRight 0.3s ease;
       }
     }
   }

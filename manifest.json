@@ -2,14 +2,10 @@
 layout: none
 ---
 {
-    "lang": "{{ site.language }}",
+    "lang": "{{ site.lang }}",
     "dir": "{{ site.lang_direction }}",
-    "name": {
-        {{ site.title | smartify | jsonify }}
-    },
-    "short_name": {
-        {{ site.short_name | smartify | jsonify }}
-    },
+    "name": {{ site.title | smartify | jsonify }},
+    "short_name": {{ site.short_name | smartify | jsonify }},
     "icons": [
         {
             "src": "/assets/icon/android-icon-192x192.png",
