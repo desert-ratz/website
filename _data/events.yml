@@ -15,9 +15,13 @@
 - date: 2024-02-22 19:30:00
   category: TNL
   map: Yellow House
+  stream: https://www.twitch.tv/videos/2070568226
   teams:
     - RATZ
     - ETKS
+  scores:
+    - 6
+    - 0
 - date: 2024-02-15 19:30:00
   category: TNL
   map: Rue de la gare
