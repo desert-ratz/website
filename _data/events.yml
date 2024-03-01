@@ -11,13 +11,22 @@
 #   scores:
 #     - <team 1 score>
 #     - <team 2 scpre>
+- date: 2024-03-07 19:30:00
+  category: TNL
+  map: TBC
+  teams:
+   - RATZ
+   - INV
 - date: 2024-02-29 19:30:00
   category: TNL
   map: Roer River House
-  stream: https://www.twitch.tv/videos/2070568226
+  stream: https://www.twitch.tv/videos/2077290216
   teams:
     - RATZ
     - RF
+  score:
+    - 0
+    - 6
 - date: 2024-02-22 19:30:00
   category: TNL
   map: Yellow House
