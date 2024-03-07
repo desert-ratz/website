@@ -18,6 +18,9 @@
   teams:
    - RATZ
    - INV
+  score:
+    - 0
+    - 6   
 - date: 2024-02-29 19:30:00
   category: TNL
   map: Roer River House
