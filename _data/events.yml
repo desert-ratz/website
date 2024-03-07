@@ -14,10 +14,9 @@
 - date: 2024-03-07 19:30:00
   category: TNL
   map: Train Station
-  stream: https://www.twitch.tv/ezy0252
   teams:
-   - RATZ
-   - INV
+    - RATZ
+    - INV
   score:
     - 0
     - 6   
@@ -26,11 +25,11 @@
   map: Roer River House
   stream: https://www.twitch.tv/videos/2077290216
   teams:
-    - RATZ
-    - RF
+     - RATZ
+     - RF
   score:
-    - 0
-    - 6
+     - 0
+     - 6
 - date: 2024-02-22 19:30:00
   category: TNL
   map: Yellow House
