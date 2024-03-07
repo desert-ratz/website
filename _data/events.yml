@@ -17,7 +17,7 @@
   teams:
     - RATZ
     - INV
-  score:
+  scores:
     - 0
     - 6   
 - date: 2024-02-29 19:30:00
@@ -27,7 +27,7 @@
   teams:
     - RATZ
     - RF
-  score:
+  scores:
     - 0
     - 6
 - date: 2024-02-22 19:30:00
