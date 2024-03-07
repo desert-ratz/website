@@ -13,7 +13,8 @@
 #     - <team 2 scpre>
 - date: 2024-03-07 19:30:00
   category: TNL
-  map: TBC
+  map: Train Station
+  stream: https://www.twitch.tv/ezy0252
   teams:
    - RATZ
    - INV
