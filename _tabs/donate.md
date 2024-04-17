@@ -12,4 +12,4 @@ Your donation will directly support our efforts to maintain the momentum, streng
 
 Together, we can make a tangible impact and pave the way for a brighter future in the virtual war zone. Stand with us, fuel our cause, and let's forge ahead towards triumph!
 
-[![GTX Donation](images/gtx_donate.png)](https://www.gtxgaming.co.uk/clientarea/index.php?m=public_pay&hash_id=xKmVrPDYaw5W)
+[![GTX Donation](../images/gtx_donate.png)](https://www.gtxgaming.co.uk/clientarea/index.php?m=public_pay&hash_id=xKmVrPDYaw5W)
