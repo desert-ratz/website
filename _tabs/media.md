@@ -2,7 +2,7 @@
 # the default layout is 'page'
 title: "Media"
 description: Media content
-order: 3
+order: 4
 ---
 
 ## Wallpapers

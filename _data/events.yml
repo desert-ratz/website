@@ -5,12 +5,19 @@
 # - date: 2024-02-08 19:30:00
 #   categoty: <the event category>
 #   map: <map or point>
+#   stream: <Streamer url or replay url>
 #   teams:
 #     - <team 1>
 #     - <team 2>
 #   scores:
 #     - <team 1 score>
 #     - <team 2 scpre>
+- date: 2024-04-18 19:30:00
+  category: TNL
+  map: Hospice
+  teams:
+    - RATZ
+    - TND
 - date: 2024-03-07 19:30:00
   category: TNL
   map: Train Station
@@ -19,7 +26,7 @@
     - INV
   scores:
     - 0
-    - 6   
+    - 6
 - date: 2024-02-29 19:30:00
   category: TNL
   map: Roer River House
