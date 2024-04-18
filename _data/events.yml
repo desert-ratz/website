@@ -18,6 +18,9 @@
   teams:
     - RATZ
     - BWR
+  scores:
+    - 6
+    - 0
 - date: 2024-03-07 19:30:00
   category: TNL
   map: Train Station
